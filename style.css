@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 75px;
+  background-color: rgb(12, 12, 41);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: rgb(128, 128, 206);
+  font-size: 1.01rem;
+}
+.left {
+  font-size: 1.5rem;
+}
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  margin: 105px 0;
+  align-items: center;
+}
+.firstSection > div {
+  width: 30%;
+}
+
+.leftSection {
+  font-size: 2rem;
+  margin: 30px 0;
+}
+.leftSection .buttons {
+  padding: 50px 0;
+}
+.leftSection .btn {
+  padding: 12px;
+  background-color: #1e2167;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.rightSection img {
+  width: 88%;
+}
+.purple {
+  color: rgb(94, 40, 145);
+}
+.textGray {
+  color: grey;
+}
+#element {
+  color: rgb(67, 63, 143);
+}
+main hr {
+  border: 0;
+  background: rgb(129, 129, 202);
+  height: 1.2px;
+  margin: 40px 84px;
+}
+.secondSection {
+  max-width: 80vw;
+  margin: auto;
+  height: 80vh;
+}
+.secondSection h1 {
+  font-size: 1.9rem;
+}
+.secondSection .box {
+  background: white;
+  width: 77vw;
+  height: 2px;
+  margin: 56px 0;
+  display: flex;
+}
+.secondSection .vertical {
+  height: 93px;
+  width: 1px;
+  background-color: white;
+  margin: 0 6vw;
+}
+
+.image-top {
+  width: 25px;
+  position: relative;
+  top: -32px;
+  left: -9px;
+}
+.vertical-title {
+  position: relative;
+  top: 75px;
+  width: 150px;
+}
+.vertical-desc {
+  position: relative;
+  top: 86px;
+  width: 150px;
+  color: grey;
+  font-size: 10px;
+}
+
+footer {
+  background-color: #38374c;
+}
+.footer {
+  display: flex;
+  padding: 23px 122px;
+  justify-content: space-evenly;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul li {
+  padding: 5px 0;
+}
+
+.footer > div {
+  width: 223px;
+}
+footer .footer-text {
+  color: grey;
+  text-align: center;
+  padding: 12px 0;
+}
+
+/* Making Website Responsive from here */
+@media screen and (max-width: 2000px) {
+  body {
+    min-width: fit-content;
+  }
+  .box {
+    flex-direction: column;
+  }
+  .secondSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .secondSection .vertical {
+    height: unset;
+  }
+  .vertical-title,
+  .vertical-desc {
+    left: 45px;
+  }
+  .secondSection{
+    height: 140vh;
+  }
+  .secondSection .box {
+    width: 50vw;
+  }
+  nav {
+    flex-direction: column;
+  }
+
+  .firstSection {
+    flex-direction: column-reverse;
+  }
+  .leftSection {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightSection {
+    width: 721px !important;
+    display: flex;
+    justify-content: center;
+  }
+  .rightSection img {
+    width: 45vw;
+    margin-bottom: 73px;
+  }
+  .image-top{
+    top: 110px; 
+  }
+}
