@@ -136,6 +136,9 @@ footer {
 .footer ul li {
   padding: 5px 0;
 }
+.footer ul li a{
+  color: darkgrey;
+}
 
 .footer > div {
   width: 223px;
