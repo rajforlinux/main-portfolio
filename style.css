@@ -128,9 +128,10 @@ footer {
 .footer {
   display: flex;
   padding: 23px 122px;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
-.footer ul {
+/* .footer ul {
   list-style: none;
 }
 .footer ul li {
@@ -138,7 +139,7 @@ footer {
 }
 .footer ul li a{
   color: darkgrey;
-}
+} */
 
 .footer > div {
   width: 223px;
