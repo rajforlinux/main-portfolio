@@ -96,13 +96,13 @@ main hr {
   margin: 56px 0;
   display: flex;
 }
+
 .secondSection .vertical {
   height: 93px;
   width: 1px;
   background-color: white;
-  margin: 0 6vw;
+  margin: 1px 8vw;
 }
-
 .image-top {
   width: 25px;
   position: relative;
@@ -138,7 +138,6 @@ footer {
   color: #858585;
 }
 
-
 .footer > div {
   width: 223px;
 }
@@ -146,4 +145,63 @@ footer .footer-text {
   color: grey;
   text-align: center;
   padding: 12px 0;
+}
+
+/* Responsive for phones */
+
+@media screen and (max-width: 1000px) {
+  body{
+    min-width: fit-content;
+  } 
+  nav{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .firstSection{
+    flex-direction: column-reverse;
+   }
+  .buttons .btn{ 
+    margin: 5px;
+    transition: all ease 0.5ms;
+  }
+  .rightSection{
+    width: 600px !important;
+    display: flex;
+    justify-content: center;
+  }
+  .leftSection{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .box {
+    flex-direction: column;
+    transition: all ease 0.5s;
+  }
+  .box .vertical{
+    transition: all ease 0.5s;
+  } 
+  .secondSection{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   .secondSection .box{
+    width: 50vw;
+   }
+  .secondSection .vertical {
+    height: unset;
+  }
+  .vertical-title,
+  .vertical-desc {
+    left: 45px;
+  }
+  footer {
+    display: none;
+  }
 }
