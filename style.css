@@ -10,11 +10,15 @@ body {
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 75px;
-  background-color: rgb(12, 12, 41);
+  height: 55px;
+  background-color: rgba(12, 12, 41, 0.432);
+  backdrop-filter: blur(30px);
 }
 
 nav ul {
@@ -37,6 +41,7 @@ nav ul li a:hover {
 .left {
   font-size: 1.5rem;
 }
+
 .firstSection {
   display: flex;
   justify-content: space-around;
@@ -51,12 +56,13 @@ nav ul li a:hover {
   font-size: 2rem;
   margin: 30px 0;
 }
+
 .leftSection .buttons {
   padding: 50px 0;
 }
 .leftSection .btn {
   padding: 12px;
-  background-color: #1e2167;
+  background: none;
   color: white;
   border: 2px solid white;
   border-radius: 6px;
@@ -65,7 +71,12 @@ nav ul li a:hover {
 }
 .rightSection img {
   width: 88%;
+
+  filter: drop-shadow(
+    10px 10px 20px rgba(0, 0, 0, 0.63)
+  ); /* left access, right access and Blur(20px) respectively*/
 }
+
 .purple {
   color: rgb(94, 40, 145);
 }
@@ -150,50 +161,61 @@ footer .footer-text {
 /* Responsive for phones */
 
 @media screen and (max-width: 1000px) {
-  body{
+  body {
     min-width: fit-content;
-  } 
-  nav{
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   }
-   .firstSection{
+    height: 80px;
+  }
+  .left {
+    padding: 3px;
+    margin: 8px;
+  }
+
+  .firstSection {
     flex-direction: column-reverse;
-   }
-  .buttons .btn{ 
+  }
+  .buttons .btn {
     margin: 5px;
     transition: all ease 0.5ms;
   }
-  .rightSection{
+  .rightSection {
     width: 600px !important;
     display: flex;
     justify-content: center;
   }
-  .leftSection{
+  .rightSection img {
+    width: 45vw;
+    margin-bottom: 70px;
+  }
+  .leftSection {
     width: 100% !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
   .box {
     flex-direction: column;
     transition: all ease 0.5s;
   }
-  .box .vertical{
+  .box .vertical {
     transition: all ease 0.5s;
-  } 
-  .secondSection{
-    
+  }
+  .secondSection {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-   .secondSection .box{
+  .secondSection .box {
     width: 50vw;
-   }
+  }
   .secondSection .vertical {
     height: unset;
   }
