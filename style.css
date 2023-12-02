@@ -161,9 +161,7 @@ footer .footer-text {
 /* Responsive for phones */
 
 @media screen and (max-width: 1000px) {
-  body {
-    min-width: fit-content;
-  }
+
   nav {
     position: fixed;
     top: 0;
